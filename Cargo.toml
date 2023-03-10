@@ -1,0 +1,24 @@
+[package]
+name = "mongodb-driver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name="insert-many"
+path="src/insert-many.rs"
+
+[[bin]]
+name="backup"
+path="src/backup.rs"
+
+
+
+[dependencies]
+dotenv = "0.15.0"
+futures = "0.3"
+mongodb = "2.4.0"
+tokio = "1.26.0"
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4.23"

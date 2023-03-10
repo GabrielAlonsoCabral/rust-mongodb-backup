@@ -1,0 +1,9 @@
+.env
+target/
+cargo.lock
+
+# exclude everything
+backups/*
+
+# exception to the rule
+!backups/.gitkeep 
