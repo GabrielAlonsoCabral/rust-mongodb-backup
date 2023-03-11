@@ -5,13 +5,47 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[workspace]
+
+[lib]
+name="models"
+path="src/models.rs"
+
 [[bin]]
-name="insert-many"
-path="src/insert-many.rs"
+name="backup-admins"
+path="src/backup-admins.rs"
+
+[[bin]]
+name="backup-users"
+path="src/backup-users.rs"
+
+[[bin]]
+name="backup-projects"
+path="src/backup-projects.rs"
+
+[[bin]]
+name="backup-points"
+path="src/backup-points.rs"
+
+[[bin]]
+name="backup-photos"
+path="src/backup-photos.rs"
+
+[[bin]]
+name="backup-layers"
+path="src/backup-layers.rs"
+
+[[bin]]
+name="backup-companies"
+path="src/backup-companies.rs"
 
 [[bin]]
 name="backup"
 path="src/backup.rs"
+
+[[bin]]
+name="insert-many"
+path="src/insert-many.rs"
 
 
 
