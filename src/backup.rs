@@ -12,8 +12,8 @@ fn main() {
     ];
 
     for backup in backups {
-        thread::sleep(std::time::Duration::new(5, 0));
         execute_backup(backup);
+        thread::sleep(std::time::Duration::new(5, 0));
     }
 }
 
