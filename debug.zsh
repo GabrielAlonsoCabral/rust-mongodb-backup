@@ -1,0 +1,1 @@
+rm -rf backups/*.json && cargo build --release && ./target/release/backup
