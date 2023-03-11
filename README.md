@@ -21,7 +21,10 @@ $ cd rust-mongodb-backup
 # Insert Documents in Generical Book collection
 $ cargo run --bin insert-many
 
-# Backup Book collection
+# Build all binaries
+$ cargo build --release
+
+# Backup all collections 
 $ cargo run --bin backup
 ```
 
@@ -35,9 +38,5 @@ $ cargo build --release
 ## Running binary application
 
 ```
-# Insert Documents in Generical Book collection
-$ ./target/release/insert-many
-
-# Backup Book collection
 $ ./target/release/backup 
 ```
